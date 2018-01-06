@@ -1,0 +1,42 @@
+footer {
+    border-top: 1px solid #d2d2d2;
+    padding: 70px 0 90px 0;
+    text-align: center;
+
+    .footer-list {
+        @include list;
+        @extend .flex-center;
+        margin: 0 auto;
+
+        li {
+            margin: 0 22px;
+
+            a {
+                font: 400 13px $main-font;
+                color: $secondary-color;
+                letter-spacing: 0.65px;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &:hover {
+                    transition: 0.2s;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    p {
+        color: $secondary-color;
+        letter-spacing: 0.65px;
+        margin-top: 20px;
+        font: 400 13px $main-font;
+
+        span {
+            text-transform: lowercase;
+            color: $main-color;
+            font: 400 28px $font-cursive;
+            letter-spacing: 1.4px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.description {
+    @include transition(all, 0.3s, ease-in-out);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $main-color;
+    padding: 17px 0 24px 27px;
+    height: 83px;
+    .performer {
+
+        h3 {
+            color: $white;
+            font: 400 22px $secondary-font;
+            @include reset;
+        }
+
+        span {
+            color: $white;
+            font: 400 16px $main-font;
+            margin-top: 5px;
+            letter-spacing: normal;
+        }
+    }
+
+    &:hover {
+        height: 140px;
+    }
+}

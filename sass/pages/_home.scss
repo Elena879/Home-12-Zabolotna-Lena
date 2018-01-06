@@ -1,0 +1,256 @@
+.main-section {
+    &:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: $main-section-border;
+        position: relative;
+        bottom: 6px;
+    }
+
+    .main-text {
+        top: 158px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        h1 {
+            color: $main-color;
+            font: bold 116px $secondary-font;
+            text-transform: uppercase;
+            @include reset;
+
+            span {
+                color: $secondary-color;
+                font: 400 80px $font-cursive;
+                text-transform: none;
+                display: block;
+            }
+        }
+    }
+}
+
+.introducing-block {
+    padding: 103px 0 100px 0;
+    border-bottom: solid 1px $main-border-color;
+
+}
+
+.upcoming-latest {
+    padding-top: 97px;
+    margin-bottom: 100px;
+
+    .upcoming-latest-section {
+        @extend .flex-between;
+    }
+}
+
+.upcoming {
+    max-width: 770px;
+    width: 100%;
+    border-bottom: 4px solid $secondary-border-color;
+    padding-bottom: 5px;
+
+    &:after {
+        content: '';
+        display: block;
+        max-width: 168px;
+        height: 4px;
+        background-color: $main-color;
+        margin-left: 22px;
+        position: relative;
+        bottom: -9px;
+    }
+
+    .main-upcoming {
+        @include clearfix;
+        margin-top: 48px;
+        max-width: 620px;
+        width: 100%;
+    }
+}
+
+.picture-consert {
+    position: relative;
+    float: left;
+    width: 50%;
+    max-width: 270px;
+
+    .date-concert {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 110px;
+        max-width: 49px;
+        color: $white;
+        font: 700 32px/1 $secondary-font;
+        letter-spacing: 3.2px;
+
+        span {
+            display: block;
+            font-size: 45px;
+            letter-spacing: normal;
+        }
+    }
+}
+
+.consert-details {
+    float: right;
+    width: 50%;
+
+    h3 {
+        color: $secondary-color;
+        font: 500 22px $secondary-font;
+        @include list;
+    }
+
+    .location {
+        @include list;
+        margin-top: 33px;
+
+        li {
+            color: $secondary-color;
+            font: 400 16px $main-font;
+            margin-top: 15px;
+
+            span {
+                margin: 0 15px 0 30px;
+            }
+
+            &:first-child {
+                margin-top: 0;
+
+                span {
+                    margin: 0 12px 0 8px;
+                }
+            }
+        }
+    }
+}
+
+.latest {
+    @include clearfix;
+    max-width: 372px;
+    width: 100%;
+
+    iframe {
+        width: 372px;
+        height: 290px;
+        margin-top: 9px;
+    }
+}
+
+.learn-more {
+    .learn-block {
+        padding: 86px 0 81px 100px;
+        background: url('../img/bg-man.png') no-repeat center top / cover;
+
+        h2 {
+            color: $white;
+            font: 500 32px $secondary-font;
+            text-transform: uppercase;
+            @include reset;
+        }
+
+        p {
+            color: $white;
+            font: 400 22px $main-font;
+            @include reset;
+
+            span {
+                text-transform: lowercase;
+                color: $white;
+                font: 400 65px $font-cursive;
+            }
+        }
+    }
+}
+
+.download {
+    .download-block {
+        background: url('../img/download-back.png') no-repeat center top / cover;
+        padding: 80px 0 120px 0;
+        text-align: center;
+
+        h2 {
+            color: $white;
+            font: 500 32px $secondary-font;
+            @include reset;
+        }
+
+        p {
+            color: $white;
+            font: 400 22px $main-font;
+            @include reset;
+            margin-top: 9px;
+        }
+    }
+}
+
+.popular-instagram {
+    padding: 104px 0 91px 0;
+
+    .popular-instagram-block {
+        @extend .flex-between;
+    }
+}
+
+.popular {
+    max-width: 772px;
+    width: 100%;
+
+    iframe {
+        margin-top: 40px;
+        width: 100%;
+        height: 166px;
+    }
+
+    .songs {
+        @include list;
+        @include column-count(3);
+        margin-top: 20px;
+        li {
+            padding: 10px 0 15px 0;
+            margin-right: 60px;
+            border-bottom: 1px solid $main-border-color;
+
+            a {
+                font: 400 16px $main-font;
+                color: $secondary-color;
+                text-decoration: none;
+
+                &:hover {
+                    transition: 0.2s;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.instagram {
+    max-width: 373px;
+    width: 100%;
+
+    .instagram-pictures {
+        margin-top: 10px;
+
+        a {
+            margin-top: 30px;
+            display: inline-block;
+
+            &:hover {
+                transition: 0.2s;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.newsletter {
+    padding: 105px 0 70px 0;
+}
+
+

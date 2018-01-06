@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.section-name {
+
+    h2 {
+        @include reset;
+        color: $secondary-color;
+        font: 400 32px $secondary-font;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+
+        span {
+            color: $main-color;
+            font-family: $font-cursive;
+            font-weight: 400;
+            text-transform: none;
+            display: block;
+        }
+    }
+}
+

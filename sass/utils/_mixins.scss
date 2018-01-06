@@ -1,0 +1,50 @@
+@mixin list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin reset {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+@mixin appearance($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin transition($property, $duration, $timing) {
+    -webkit-transition: $property  $duration $timing;
+    -moz-transition: $property $duration $timing;
+    -o-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &.placeholder { @content; }
+}
+
+@mixin column-count($number) {
+    -webkit-column-count: $number;
+    -moz-column-count: $number;
+    column-count: $number;
+}
+
+
+
+
+

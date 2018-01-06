@@ -1,0 +1,78 @@
+form {
+    @extend .flex-between;
+    max-width: 533px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #999999;
+
+    textarea {
+        @include appearance ('appearance', none);
+        @include placeholder { letter-spacing: 3.2px;}
+        color: $form-color;
+        font: 400 16px $main-font;
+        border: none;
+        outline: none;
+        resize: none;
+    }
+
+    button {
+        @include appearance ('appearance', none);
+        background: none;
+        border: none;
+        padding: 0;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.2s;
+            opacity: 0.7;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        i {
+            color: $main-color;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+.popup-content {
+    padding: 20px 40px;
+    form {
+        margin-top: 10px;
+        font: 400 16px $main-font;
+        border: none;
+        .email {
+            width: 70%;
+            border: 2px solid $black;
+            padding: 14px;
+            @include appearance ('appearance', none);
+            border-radius: 10px;
+            margin-right: 1px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .submit {
+            border-radius: 10px;
+            width: 30%;
+            background: none;
+            border: 2px solid $black;
+            @include appearance ('appearance', none);
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

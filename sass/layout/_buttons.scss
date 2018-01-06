@@ -1,0 +1,112 @@
+.custom-navigation, .custom-navigation-videos  {
+    text-align: right;
+
+    .custom-controls-container, .custom-controls-container-videos {
+        display: inline-block;
+    }
+
+    a {
+        width: 35px;
+        background-color: $main-color;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        padding: 7px;
+
+        &:hover {
+            transition: 0.4s;
+            opacity: 0.8;
+            outline: none;
+        }
+
+        i {
+            color: $white;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.button {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    font: 700 12px $main-font;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+
+    &:hover {
+        transition: 0.2s;
+        opacity: 0.9;
+    }
+}
+
+.main-button {
+    background-color: $main-color;
+    color: $white;
+    padding: 21px 46px;
+    margin-top: 90px;
+    display: inline-block;
+}
+
+.purchase {
+    padding: 22px 44px;
+    background-color: $white;
+    color: $main-color;
+}
+
+.upcoming-button {
+    padding: 20px 40px;
+    margin-top: 30px;
+}
+
+.learn-more-button {
+    background-color: $white;
+    color: $main-color;
+    padding: 20px 40px;
+    margin-top: 47px;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        transition: 0.2s;
+        opacity: 0.8;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.download-buttons {
+    @extend .flex-center;
+    margin-top: 41px;
+
+    a {
+        max-width: 165px;
+        display: inline-block;
+
+        &:hover {
+            transition: 0.2s;
+            opacity: 0.8;
+        }
+
+        &:first-child {
+            margin-right: 14px;
+        }
+    }
+}
+
+.close-popup {
+    float: right;
+    &:hover {
+        transition: 0.2s;
+        opacity: 0.7;
+    }
+
+    i {
+        color: $black;
+    }
+}
+

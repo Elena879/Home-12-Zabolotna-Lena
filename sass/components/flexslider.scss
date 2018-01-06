@@ -1,0 +1,45 @@
+.flexslider {
+    margin: 0;
+    border: none;
+    height: 703px;
+
+    .slides {
+        li {
+            height: 700px;
+        }
+        .first-bg {
+            background: url('../img/main-back.png') no-repeat center top / cover;
+
+        }
+        .second-bg {
+            background: url('../img/girl-with-guitar.png') no-repeat center top / cover;
+
+        }
+        .third-bg {
+            background: url('../img/man-with-guitar.png') no-repeat center top / cover;
+        }
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: relative;
+        bottom: 3px;
+        z-index: 10;
+        max-width: 1500px;
+        width: 75%;
+        height: 3px;
+        background-color: $main-color;
+    }
+}
+
+.flexslider-introducing {
+    margin-top: 10px;
+
+    li {
+        width: 260px;
+        position: relative;
+    }
+}
+
+
+
